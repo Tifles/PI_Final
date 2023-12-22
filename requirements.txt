@@ -1,0 +1,9 @@
+httpx
+fastapi
+pytest
+sacremoses
+sentencepiece
+streamlit==1.29.0
+torch
+transformers
+uvicorn
