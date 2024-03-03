@@ -52,7 +52,7 @@ async def root():
 
 
 @app.post("/en-ru/")
-def predict(item: Item):
+def predict_en_ru(item: Item):
     """Translate text from English to Russian"""
     orig_text = item.text
     return translate_from_ru(orig_text)
@@ -61,7 +61,7 @@ def predict(item: Item):
 
 
 @app.post("/ru-en/")
-def predict(item: Item):
+def predict_ru_en(item: Item):
     """Translate text from Russian to English"""
     orig_text = item.text
     return translate_from_en(orig_text)
