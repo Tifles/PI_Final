@@ -5,6 +5,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 # creating a FastAPI application in the app variable
 app = FastAPI()
 
+
 class Item(BaseModel):
     text: str
 
@@ -52,4 +53,4 @@ def predict(item: Item):
 def predict(item: Item):
     """Translate text from Russian to English"""
     orig_text = item.text
-    return  translate_from_en(orig_text)
+    return translate_from_en(orig_text)
