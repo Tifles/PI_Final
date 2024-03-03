@@ -34,4 +34,3 @@ def test_ru_en_translate():
                            json={"text": "Весь мир"})
     assert response.status_code == 200
     assert response.json() == "World"
-    

@@ -20,4 +20,3 @@ if (st.button('Translate')):
     else:
         response = requests.post(url="http://127.0.0.1:8000/en-ru/", data=json.dumps(orig_text))
     st.success(response.text)
-    
